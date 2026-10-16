@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ocultar, bloquear y eliminar fotos en el iPhone</title>
+<meta name="description" content="Guías prácticas para mantener tus fotos privadas en el iPhone. Cada guía muestra los pasos en iOS y qué protege cada opción.">
+<link rel="canonical" href="https://arkwardenapp.github.io/es/">
+<link rel="alternate" hreflang="en" href="https://arkwardenapp.github.io/">
+<link rel="alternate" hreflang="de" href="https://arkwardenapp.github.io/de/">
+<link rel="alternate" hreflang="es" href="https://arkwardenapp.github.io/es/">
+<link rel="alternate" hreflang="x-default" href="https://arkwardenapp.github.io/">
+<link rel="icon" type="image/png" href="../logo-256.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ocultar, bloquear y eliminar fotos en el iPhone">
+<meta property="og:description" content="Guías prácticas para mantener tus fotos privadas en el iPhone. Cada guía muestra los pasos en iOS y qué protege cada opción.">
+<meta property="og:url" content="https://arkwardenapp.github.io/es/">
+<meta property="og:image" content="https://arkwardenapp.github.io/logo-256.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Ocultar, bloquear y eliminar fotos en el iPhone",
+  "url": "https://arkwardenapp.github.io/es/",
+  "inLanguage": "es",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ArkWarden",
+    "url": "https://arkwarden.app/es"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://arkwarden.app/es/guides/hidden-photos-iphone",
+        "name": "Cómo ocultar y mostrar fotos en el iPhone"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://arkwarden.app/es/guides/do-hidden-photos-sync-to-icloud",
+        "name": "¿Las fotos ocultas se sincronizan con iCloud?"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://arkwarden.app/es/guides/lock-photos-iphone",
+        "name": "Cómo bloquear fotos en el iPhone"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "url": "https://arkwarden.app/es/guides/password-protect-folder-on-iphone",
+        "name": "Cómo bloquear una carpeta en el iPhone"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "url": "https://arkwarden.app/es/guides/permanently-delete-photos-iphone",
+        "name": "Cómo eliminar fotos definitivamente en el iPhone"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "url": "https://arkwarden.app/es/guides/best-photo-vault-apps-iphone",
+        "name": "Las 7 mejores apps de bóveda de fotos para iPhone"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "url": "https://arkwarden.app/es/guides/app-to-hide-photos",
+        "name": "Las mejores apps para ocultar fotos en iPhone"
+      }
+    ]
+  }
+}
+</script>
+<style>
+:root {
+  --bg: #EDEFEE;
+  --card: #FFFFFF;
+  --ink: #16181B;
+  --muted: #5A6067;
+  --line: #D6DADC;
+  --gold: #A87B2F;
+  --gold-ink: #8A6424;
+  --shadow: 0 1px 2px rgba(22, 24, 27, .06), 0 8px 24px -12px rgba(22, 24, 27, .18);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121416;
+    --card: #1B1E21;
+    --ink: #ECEDEE;
+    --muted: #A2A8AE;
+    --line: #2C3034;
+    --gold: #C8A24E;
+    --gold-ink: #D4B266;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -12px rgba(0, 0, 0, .6);
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+a { color: inherit; }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+/* Top bar */
+.top { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -.01em; text-decoration: none; }
+.brand img { width: 32px; height: 32px; border-radius: 8px; }
+.top-link { font-size: 15px; line-height: 1.35; color: var(--muted); text-align: right; text-decoration: none; }
+.brand { flex-shrink: 0; }
+.top-link:hover { color: var(--ink); }
+
+/* Intro */
+.intro { padding: 56px 0 40px; max-width: 760px; }
+.intro h1 {
+  margin: 0 0 16px;
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+.intro h1 span { color: var(--gold); }
+.intro p { margin: 0; max-width: 560px; font-size: 19px; color: var(--muted); }
+
+/* Guide cards: equal weight, any number */
+.guides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 16px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  transition: border-color .2s ease, transform .2s ease;
+}
+.card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.card h2 { margin: 0 0 8px; font-size: 20px; line-height: 1.3; font-weight: 700; letter-spacing: -.015em; }
+.card h2 a { text-decoration: none; }
+.card h2 a::after { content: ""; position: absolute; inset: 0; border-radius: 14px; }
+.card h2 a:focus-visible { outline: none; }
+.card:focus-within { outline: 2px solid var(--gold); outline-offset: 3px; }
+.card p { margin: 0 0 20px; font-size: 16px; color: var(--muted); }
+.card .go {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold-ink);
+}
+.card .go::after { content: "\2192"; display: inline-block; margin-left: 6px; transition: transform .2s ease; }
+.card:hover .go::after { transform: translateX(4px); }
+
+/* About */
+.about {
+  margin: 56px 0 0;
+  padding: 32px 0;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 32px;
+}
+.about h2 { margin: 0 0 4px; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-ink); }
+.about p { margin: 0; max-width: 560px; }
+.about img { display: block; width: 150px; height: auto; }
+
+footer { padding: 0 0 40px; font-size: 14px; color: var(--muted); }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+footer a { text-underline-offset: 3px; }
+footer strong { color: var(--ink); font-weight: 600; }
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .card .go::after { transition: none; }
+  .card:hover { transform: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a class="brand" href="https://arkwarden.app/es"><img src="../logo-256.png" alt="" width="32" height="32">ArkWarden</a>
+  <a class="top-link" href="https://arkwarden.app/es/guides">Todas las guías en arkwarden.app</a>
+</header>
+
+<main>
+  <section class="intro">
+    <h1>Guías para ocultar, bloquear y eliminar <span>fotos en el iPhone</span></h1>
+    <p>Guías prácticas para mantener tus fotos privadas en el iPhone. Cada guía muestra los pasos en iOS y qué protege cada opción.</p>
+  </section>
+
+  <ul class="guides">
+    <li class="card">
+      <h2><a href="https://arkwarden.app/es/guides/hidden-photos-iphone">Cómo ocultar y mostrar fotos en el iPhone</a></h2>
+      <p>Ocultar una foto la saca de tu Fototeca. Pero ¿adónde va y quién puede seguir abriéndola?</p>
+      <span class="go" aria-hidden="true">Leer la guía</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/es/guides/do-hidden-photos-sync-to-icloud">¿Las fotos ocultas se sincronizan con iCloud?</a></h2>
+      <p>Tus fotos ocultas también pueden aparecer en otros dispositivos. La guía explica dónde se sincronizan y quién puede acceder a ellas.</p>
+      <span class="go" aria-hidden="true">Leer la guía</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/es/guides/lock-photos-iphone">Cómo bloquear fotos en el iPhone</a></h2>
+      <p>¿Quién puede abrir tus fotos aunque la app Fotos esté bloqueada con Face ID?</p>
+      <span class="go" aria-hidden="true">Leer la guía</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/es/guides/password-protect-folder-on-iphone">Cómo bloquear una carpeta en el iPhone</a></h2>
+      <p>En el iPhone no puedes proteger una sola carpeta con contraseña. Estas son las alternativas.</p>
+      <span class="go" aria-hidden="true">Leer la guía</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/es/guides/permanently-delete-photos-iphone">Cómo eliminar fotos definitivamente en el iPhone</a></h2>
+      <p>Tocar Eliminar es solo el primer paso. Aquí verás por qué una foto sigue en tu iPhone 30 días más.</p>
+      <span class="go" aria-hidden="true">Leer la guía</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/es/guides/best-photo-vault-apps-iphone">Las 7 mejores apps de bóveda de fotos para iPhone</a></h2>
+      <p>Todas las apps de bóveda prometen privacidad. Las probamos y vimos cuáles explican cómo cifran tus archivos.</p>
+      <span class="go" aria-hidden="true">Leer la guía</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/es/guides/app-to-hide-photos">Las mejores apps para ocultar fotos en iPhone</a></h2>
+      <p>No todas las apps para ocultar fotos funcionan igual. Compara qué protege de verdad cada tipo.</p>
+      <span class="go" aria-hidden="true">Leer la guía</span>
+    </li>
+  </ul>
+
+  <section class="about">
+    <div>
+      <h2>Acerca de ArkWarden</h2>
+      <p>ArkWarden es una bóveda para fotos y archivos en el iPhone. Todo lo que guardas se cifra en tu iPhone, y la bóveda se abre con un patrón que dibujas.</p>
+    </div>
+    <a href="https://apps.apple.com/app/apple-store/id6777033926?pt=127601532&amp;ct=github-pages&amp;mt=8"><img src="../appstore-es.svg" alt="Consigue ArkWarden en el App Store" width="150" height="50"></a>
+  </section>
+</main>
+
+<footer>
+  <a href="https://arkwarden.app/es">arkwarden.app</a>
+  <nav class="langs" aria-label="Idioma"><a href="../" hreflang="en" lang="en">English</a> &middot; <a href="../de/" hreflang="de" lang="de">Deutsch</a> &middot; <strong lang="es">Español</strong></nav>
+</footer>
+
+</div>
+</body>
+</html>

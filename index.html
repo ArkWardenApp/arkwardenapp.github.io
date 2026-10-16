@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guides to Hiding, Locking and Deleting Photos on iPhone</title>
+<meta name="description" content="Practical guides for keeping your photos private on iPhone. Each one shows the steps in iOS and what each option protects.">
+<link rel="canonical" href="https://arkwardenapp.github.io/">
+<link rel="alternate" hreflang="en" href="https://arkwardenapp.github.io/">
+<link rel="alternate" hreflang="de" href="https://arkwardenapp.github.io/de/">
+<link rel="alternate" hreflang="es" href="https://arkwardenapp.github.io/es/">
+<link rel="alternate" hreflang="x-default" href="https://arkwardenapp.github.io/">
+<link rel="icon" type="image/png" href="logo-256.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guides to Hiding, Locking and Deleting Photos on iPhone">
+<meta property="og:description" content="Practical guides for keeping your photos private on iPhone. Each one shows the steps in iOS and what each option protects.">
+<meta property="og:url" content="https://arkwardenapp.github.io/">
+<meta property="og:image" content="https://arkwardenapp.github.io/logo-256.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Guides to Hiding, Locking and Deleting Photos on iPhone",
+  "url": "https://arkwardenapp.github.io/",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ArkWarden",
+    "url": "https://arkwarden.app"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "url": "https://arkwarden.app/guides/hidden-photos-iphone", "name": "How to hide and unhide photos on iPhone" },
+      { "@type": "ListItem", "position": 2, "url": "https://arkwarden.app/guides/do-hidden-photos-sync-to-icloud", "name": "Do hidden photos sync to iCloud?" },
+      { "@type": "ListItem", "position": 3, "url": "https://arkwarden.app/guides/lock-photos-iphone", "name": "How to lock photos on iPhone" },
+      { "@type": "ListItem", "position": 4, "url": "https://arkwarden.app/guides/password-protect-folder-on-iphone", "name": "How to lock a folder on iPhone" },
+      { "@type": "ListItem", "position": 5, "url": "https://arkwarden.app/guides/permanently-delete-photos-iphone", "name": "How to permanently delete photos on iPhone" },
+      { "@type": "ListItem", "position": 6, "url": "https://arkwarden.app/guides/best-photo-vault-apps-iphone", "name": "7 best photo vault apps for iPhone" },
+      { "@type": "ListItem", "position": 7, "url": "https://arkwarden.app/guides/app-to-hide-photos", "name": "The best apps to hide photos on iPhone" }
+    ]
+  }
+}
+</script>
+<style>
+:root {
+  --bg: #EDEFEE;
+  --card: #FFFFFF;
+  --ink: #16181B;
+  --muted: #5A6067;
+  --line: #D6DADC;
+  --gold: #A87B2F;
+  --gold-ink: #8A6424;
+  --shadow: 0 1px 2px rgba(22, 24, 27, .06), 0 8px 24px -12px rgba(22, 24, 27, .18);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121416;
+    --card: #1B1E21;
+    --ink: #ECEDEE;
+    --muted: #A2A8AE;
+    --line: #2C3034;
+    --gold: #C8A24E;
+    --gold-ink: #D4B266;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -12px rgba(0, 0, 0, .6);
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+a { color: inherit; }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+/* Top bar */
+.top { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -.01em; text-decoration: none; }
+.brand img { width: 32px; height: 32px; border-radius: 8px; }
+.top-link { font-size: 15px; line-height: 1.35; color: var(--muted); text-align: right; text-decoration: none; }
+.brand { flex-shrink: 0; }
+.top-link:hover { color: var(--ink); }
+
+/* Intro */
+.intro { padding: 56px 0 40px; max-width: 760px; }
+.intro h1 {
+  margin: 0 0 16px;
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+.intro h1 span { color: var(--gold); }
+.intro p { margin: 0; max-width: 560px; font-size: 19px; color: var(--muted); }
+
+/* Guide cards: equal weight, any number */
+.guides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 16px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  transition: border-color .2s ease, transform .2s ease;
+}
+.card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.card h2 { margin: 0 0 8px; font-size: 20px; line-height: 1.3; font-weight: 700; letter-spacing: -.015em; }
+.card h2 a { text-decoration: none; }
+.card h2 a::after { content: ""; position: absolute; inset: 0; border-radius: 14px; }
+.card h2 a:focus-visible { outline: none; }
+.card:focus-within { outline: 2px solid var(--gold); outline-offset: 3px; }
+.card p { margin: 0 0 20px; font-size: 16px; color: var(--muted); }
+.card .go {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold-ink);
+}
+.card .go::after { content: "\2192"; display: inline-block; margin-left: 6px; transition: transform .2s ease; }
+.card:hover .go::after { transform: translateX(4px); }
+
+/* About */
+.about {
+  margin: 56px 0 0;
+  padding: 32px 0;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 32px;
+}
+.about h2 { margin: 0 0 4px; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-ink); }
+.about p { margin: 0; max-width: 560px; }
+.about img { display: block; width: 150px; height: auto; }
+
+footer { padding: 0 0 40px; font-size: 14px; color: var(--muted); }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+footer a { text-underline-offset: 3px; }
+footer strong { color: var(--ink); font-weight: 600; }
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .card .go::after { transition: none; }
+  .card:hover { transform: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a class="brand" href="https://arkwarden.app"><img src="logo-256.png" alt="" width="32" height="32">ArkWarden</a>
+  <a class="top-link" href="https://arkwarden.app/guides">All guides on arkwarden.app</a>
+</header>
+
+<main>
+  <section class="intro">
+    <h1>Guides to hiding, locking and deleting <span>photos on iPhone</span></h1>
+    <p>Practical guides for keeping your photos private on iPhone. Each one shows the steps in iOS and what each option protects.</p>
+  </section>
+
+  <ul class="guides">
+    <li class="card">
+      <h2><a href="https://arkwarden.app/guides/hidden-photos-iphone">How to hide and unhide photos on iPhone</a></h2>
+      <p>Hiding a photo moves it out of your Library. See where it goes and who can still open it.</p>
+      <span class="go" aria-hidden="true">Read the guide</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/guides/do-hidden-photos-sync-to-icloud">Do hidden photos sync to iCloud?</a></h2>
+      <p>Hidden photos can show up on your other devices too. The guide shows where they sync and who can see them there.</p>
+      <span class="go" aria-hidden="true">Read the guide</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/guides/lock-photos-iphone">How to lock photos on iPhone</a></h2>
+      <p>Who can still open your photos when the Photos app is locked with Face ID?</p>
+      <span class="go" aria-hidden="true">Read the guide</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/guides/password-protect-folder-on-iphone">How to lock a folder on iPhone</a></h2>
+      <p>iPhone has no password for a single folder. Here are the ways to lock one anyway.</p>
+      <span class="go" aria-hidden="true">Read the guide</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/guides/permanently-delete-photos-iphone">How to permanently delete photos on iPhone</a></h2>
+      <p>Tapping Delete is only the first step. Here is what keeps a photo on your iPhone for 30 more days.</p>
+      <span class="go" aria-hidden="true">Read the guide</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/guides/best-photo-vault-apps-iphone">7 best photo vault apps for iPhone</a></h2>
+      <p>Every vault app promises privacy. We tested which ones explain how they encrypt your files.</p>
+      <span class="go" aria-hidden="true">Read the guide</span>
+    </li>
+    <li class="card">
+      <h2><a href="https://arkwarden.app/guides/app-to-hide-photos">The best apps to hide photos on iPhone</a></h2>
+      <p>Apps to hide photos do not all work the same way. See what each type really protects.</p>
+      <span class="go" aria-hidden="true">Read the guide</span>
+    </li>
+  </ul>
+
+  <section class="about">
+    <div>
+      <h2>About ArkWarden</h2>
+      <p>ArkWarden is an iPhone vault for photos and files. Everything inside is encrypted on your iPhone, and the vault opens with a pattern you draw.</p>
+    </div>
+    <a href="https://apps.apple.com/app/apple-store/id6777033926?pt=127601532&amp;ct=github-pages&amp;mt=8"><img src="appstore.svg" alt="Download ArkWarden on the App Store" width="150" height="50"></a>
+  </section>
+</main>
+
+<footer>
+  <a href="https://arkwarden.app">arkwarden.app</a>
+  <nav class="langs" aria-label="Language"><strong lang="en">English</strong> &middot; <a href="de/" hreflang="de" lang="de">Deutsch</a> &middot; <a href="es/" hreflang="es" lang="es">Español</a></nav>
+</footer>
+
+</div>
+</body>
+</html>
